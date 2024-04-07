@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 600px;
     margin: 100px auto;
-    background-color: #1775f0;
+    background-color: #297ff0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -16,15 +16,43 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #3a3a3a;
 }
 
 #mensaje {
-    color: #606060;
+    color: #3a3a3a;
+    font-weight: 500;
     font-size: 22px;
     margin-top: 20px;
     padding: 20px;
     border: 3px solid #ccc;
     border-radius: 5px;
     background-color: #ededed;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        background-color: rgb(54, 132, 241);
+    }
+    
+    .container {
+        background-color: #dedede;
+        border-radius: 6px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    #mensaje {
+        color: #2e2e2e;
+        font-weight: 500;
+        font-size: 22px;
+        margin-top: 20px;
+        padding: 20px;
+        border: 3px solid #595959;
+        border-radius: 5px;
+        background-color: #dedede;
+    }
 }

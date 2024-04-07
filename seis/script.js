@@ -28,24 +28,3 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error('Error al cargar el archivo JSON:', error);
     });
 });
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     fetch('mensajes.json')
-//         .then(response => response.json())
-//         .then(data => {
-//             const fechaActual = new Date();
-//             const dia = String(fechaActual.getDate()).padStart(2, '0');
-//             const mes = String(fechaActual.getMonth() + 1).padStart(2, '0');
-//             const claveFecha = `${mes}-${dia}`; // Formateamos la fecha
-
-//             const mensaje = data[claveFecha] || "Te amo, bonita.";
-
-//             const mensajeDiv = document.getElementById("mensaje");
-//             mensajeDiv.textContent = mensaje;
-//         })
-//         .catch(error => {
-//             console.error('Error al cargar el archivo JSON:', error);
-//         });
-// });
